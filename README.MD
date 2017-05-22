@@ -48,9 +48,11 @@ Some options are available:
 
 ```JS
 $(".images-grid").imagesGrid({
-	rowHeight: 250,					// The minimum height you want each row of the grid to be
-	margin: 15,						// The amount of pixels between each images
-	imageSelector: '.image-thumb',	// The class name of the images in your grid
-	responsive: false				// To disable the grid responsivness (default is true)
+	rowHeight: 250,				// The minimum height you want each row of the grid to be
+	margin: 15,				// The amount of pixels between each images
+	imageSelector: '.image-thumb',		// The class name of the images in your grid
+	responsive: false			// To disable the grid responsivness (default is true)
 });
 ```
+
+License MIT.
