@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>  <html class="ie ie6 lte9 lte8 lte7" lang="fr"> <![endif]-->
+<!--[if IE 7]>     <html class="ie ie7 lte9 lte8 lte7" lang="fr"> <![endif]-->
+<!--[if IE 8]>     <html class="ie ie8 lte9 lte8" lang="fr"> <![endif]-->
+<!--[if IE 9]>     <html class="ie ie9 lte9" lang="fr"> <![endif]-->
+<!--[if gt IE 9]>  <html lang="fr"> <![endif]-->
+<!--[if !IE]><!--> <html lang="fr">             <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>imagesGrid</title>
+		<meta name="description" content="" />
+		<style type="text/css">
+			/* imageGrid CSS */
+			.images-grid {
+				text-align: justify;
+				font-size: 0;
+				line-height: 0;
+			}
+			.image-wrapper {
+				display: inline-block;
+			}
+			.image-thumb {
+				max-width: 100%;
+			}
+			/* imagesGrid CSS */
+
+
+			.container {
+				width: 100%;
+				max-width: 800px;
+				margin: 0 auto;
+				padding: 50px;
+				box-sizing: border-box;
+			}
+
+			h1 {
+				margin: 0 0 50px 0;
+				text-align: center;
+			}
+			h2 {
+				margin-top: 50px;
+			}
+
+			/* Demo 1 */
+			.images-grid-1 .image-wrapper {
+				margin-top: 1px;
+			}
+
+			/* Demo 2 */
+			.images-grid-2 .image-wrapper {
+				margin-top: 10px;
+			}
+
+			/* Demo 3 */
+			.products {
+				text-align: justify;
+				font-size: 0;
+				line-height: 0;
+			}
+			.products .product-wrapper {
+				position: relative;
+				display: inline-block;
+				margin-top: 15px;
+			}
+			.products .product-image {
+				max-width: 100%;
+			}
+			.products .product-wrapper .product-overlay {
+				display: none;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background: rgba(0, 0, 0, .5);
+				cursor: pointer;
+			}
+			.product-overlay .plus-sign {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 50px;
+				height: 50px;
+				margin: -25px 0 0 -25px;
+				color: #fff;
+				font-size: 40px;
+				font-weight: bold;
+				line-height: 50px;
+				text-align: center;
+				text-decoration: none;
+			}
+			.products .product-wrapper:hover .product-overlay {
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>imagesGrid Demo</h1>
+	
+			<h2>Grid using default options</h2>
+			<div class="images-grid images-grid-1">
+			    <div class="image-wrapper" data-width="500" data-height="450">
+			        <img class="image-thumb" src="https://placehold.it/500x450/" />
+			    </div>
+			    <div class="image-wrapper" data-width="300" data-height="650">
+			        <img class="image-thumb" src="https://placehold.it/300x650/" />
+			    </div>
+			    <div class="image-wrapper" data-width="1024" data-height="768">
+			        <img class="image-thumb" src="https://placehold.it/1024x768/" />
+			    </div>
+			    <div class="image-wrapper" data-width="400" data-height="400">
+			        <img class="image-thumb" src="https://placehold.it/400x400" />
+			    </div>
+			    <div class="image-wrapper" data-width="350" data-height="700">
+			        <img class="image-thumb" src="https://placehold.it/350x700" />
+			    </div>
+			    <div class="image-wrapper" data-width="500" data-height="450">
+			        <img class="image-thumb" src="https://placehold.it/500x450/" />
+			    </div>
+			    <div class="image-wrapper" data-width="300" data-height="650">
+			        <img class="image-thumb" src="https://placehold.it/300x650/" />
+			    </div>
+			    <div class="image-wrapper" data-width="1024" data-height="768">
+			        <img class="image-thumb" src="https://placehold.it/1024x768/" />
+			    </div>
+			    <div class="image-wrapper" data-width="400" data-height="400">
+			        <img class="image-thumb" src="https://placehold.it/400x400" />
+			    </div>
+			    <div class="image-wrapper" data-width="350" data-height="700">
+			        <img class="image-thumb" src="https://placehold.it/350x700" />
+			    </div>
+			    <div class="image-wrapper" data-width="300" data-height="650">
+			        <img class="image-thumb" src="https://placehold.it/300x650/" />
+			    </div>
+			    <div class="image-wrapper" data-width="1024" data-height="768">
+			        <img class="image-thumb" src="https://placehold.it/1024x768/" />
+			    </div>
+			</div>
+	
+			<h2>Grid with custom rowHeight and margin</h2>
+			<div class="images-grid images-grid-2">
+			    <div class="image-wrapper" data-width="1024" data-height="768">
+			        <img class="image-thumb" src="https://placehold.it/1024x768/" />
+			    </div>
+			    <div class="image-wrapper" data-width="400" data-height="400">
+			        <img class="image-thumb" src="https://placehold.it/400x400" />
+			    </div>
+			    <div class="image-wrapper" data-width="350" data-height="700">
+			        <img class="image-thumb" src="https://placehold.it/350x700" />
+			    </div>
+			    <div class="image-wrapper" data-width="500" data-height="450">
+			        <img class="image-thumb" src="https://placehold.it/500x450/" />
+			    </div>
+			    <div class="image-wrapper" data-width="300" data-height="650">
+			        <img class="image-thumb" src="https://placehold.it/300x650/" />
+			    </div>
+			    <div class="image-wrapper" data-width="1024" data-height="768">
+			        <img class="image-thumb" src="https://placehold.it/1024x768/" />
+			    </div>
+			    <div class="image-wrapper" data-width="400" data-height="400">
+			        <img class="image-thumb" src="https://placehold.it/400x400" />
+			    </div>
+			    <div class="image-wrapper" data-width="350" data-height="700">
+			        <img class="image-thumb" src="https://placehold.it/350x700" />
+			    </div>
+			    <div class="image-wrapper" data-width="300" data-height="650">
+			        <img class="image-thumb" src="https://placehold.it/300x650/" />
+			    </div>
+			    <div class="image-wrapper" data-width="1024" data-height="768">
+			        <img class="image-thumb" src="https://placehold.it/1024x768/" />
+			    </div>
+			</div>
+	
+			<h2>Grid with custom classes and some absolute overlays</h2>
+			<div class="products">
+			    <div class="product-wrapper" data-width="1024" data-height="768">
+			        <img class="product-image" src="https://placehold.it/1024x768/" />
+					<div class="product-overlay">
+						<a class="plus-sign" href="javascript:void(0)">+</a>
+					</div>
+			    </div>
+			    <div class="product-wrapper" data-width="400" data-height="400">
+			        <img class="product-image" src="https://placehold.it/400x400" />
+					<div class="product-overlay">
+						<a class="plus-sign" href="javascript:void(0)">+</a>
+					</div>
+			    </div>
+			    <div class="product-wrapper" data-width="350" data-height="700">
+			        <img class="product-image" src="https://placehold.it/350x700" />
+					<div class="product-overlay">
+						<a class="plus-sign" href="javascript:void(0)">+</a>
+					</div>
+			    </div>
+			    <div class="product-wrapper" data-width="500" data-height="450">
+			        <img class="product-image" src="https://placehold.it/500x450/" />
+					<div class="product-overlay">
+						<a class="plus-sign" href="javascript:void(0)">+</a>
+					</div>
+			    </div>
+			    <div class="product-wrapper" data-width="300" data-height="650">
+			        <img class="product-image" src="https://placehold.it/300x650/" />
+					<div class="product-overlay">
+						<a class="plus-sign" href="javascript:void(0)">+</a>
+					</div>
+			    </div>
+			    <div class="product-wrapper" data-width="1024" data-height="768">
+			        <img class="product-image" src="https://placehold.it/1024x768/" />
+					<div class="product-overlay">
+						<a class="plus-sign" href="javascript:void(0)">+</a>
+					</div>
+			    </div>
+			    <div class="product-wrapper" data-width="400" data-height="400">
+			        <img class="product-image" src="https://placehold.it/400x400" />
+					<div class="product-overlay">
+						<a class="plus-sign" href="javascript:void(0)">+</a>
+					</div>
+			    </div>
+			    <div class="product-wrapper" data-width="350" data-height="700">
+			        <img class="product-image" src="https://placehold.it/350x700" />
+					<div class="product-overlay">
+						<a class="plus-sign" href="javascript:void(0)">+</a>
+					</div>
+			    </div>
+			    <div class="product-wrapper" data-width="300" data-height="650">
+			        <img class="product-image" src="https://placehold.it/300x650/" />
+					<div class="product-overlay">
+						<a class="plus-sign" href="javascript:void(0)">+</a>
+					</div>
+			    </div>
+			    <div class="product-wrapper" data-width="1024" data-height="768">
+			        <img class="product-image" src="https://placehold.it/1024x768/" />
+					<div class="product-overlay">
+						<a class="plus-sign" href="javascript:void(0)">+</a>
+					</div>
+			    </div>
+			</div>
+		</div>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="https://raw.githubusercontent.com/Lynesth/imagesGrid/master/jquery.imagesGrid.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".images-grid-1").imagesGrid();
+
+				$(".images-grid-2").imagesGrid({
+					rowHeight: 250,
+					margin: 10
+				});
+
+				$(".products").imagesGrid({
+					rowHeight: 250,
+					margin: 15,
+					imageSelector: '.product-image'
+				});
+			});
+		</script>
+	</body>
+</html>
