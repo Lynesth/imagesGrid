@@ -6,20 +6,20 @@ Your HTML code should look like this:
 
 ```HTML
 <div class="images-grid">
-    <div class="image-wrapper">
-        <img class="image-thumb" src="imgsrc.jpg" />
+    <div class="image-wrapper" data-width="500" data-height="450">
+        <img class="image-thumb" src="500x450.jpg" />
     </div>
-    <div class="image-wrapper">
-        <img class="image-thumb" src="imgsrc.jpg" />
+    <div class="image-wrapper" data-width="300" data-height="600">
+        <img class="image-thumb" src="300x600.jpg" />
     </div>
-    <div class="image-wrapper">
-        <img class="image-thumb" src="imgsrc.jpg" />
+    <div class="image-wrapper" data-width="1024" data-height="768">
+        <img class="image-thumb" src="1024x768.jpg" />
     </div>
-    <div class="image-wrapper">
-        <img class="image-thumb" src="imgsrc.jpg" />
+    <div class="image-wrapper" data-width="400" data-height="400">
+        <img class="image-thumb" src="400x400.jpg" />
     </div>
-    <div class="image-wrapper">
-        <img class="image-thumb" src="imgsrc.jpg" />
+    <div class="image-wrapper" data-width="350" data-height="700">
+        <img class="image-thumb" src="350x700.jpg" />
     </div>
 </div>
 ```
