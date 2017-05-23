@@ -56,7 +56,7 @@
 					}
 				}
 				row.forEach(function(o) {
-					o.el.css('marginRight', 0).children(self.options.imageSelector).css('height', newHeight);
+					o.el.css('marginRight', 0).children(self.options.imageSelector).css({height: newHeight, maxHeight: 'none'});
 				});
 				row = [];
 				totalWidth = 0;
@@ -71,7 +71,7 @@
 		});
 
 		row.forEach(function(o) {
-			o.el.css('marginRight', border).children(self.options.imageSelector).css('height', rowHeight);
+			o.el.css('marginRight', border).children(self.options.imageSelector).css({height: 'auto', maxHeight: rowHeight});
 		});
 	}
 
