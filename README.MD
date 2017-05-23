@@ -2,6 +2,8 @@
 
 imagesGrid is a simple and lightweight jquery plugin to create responsive justified images grid.
 
+[Demo](https://lynesth.github.io/imagesGrid/docs/)
+
 Your HTML code should look like this:
 
 ```HTML
