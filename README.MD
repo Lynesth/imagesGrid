@@ -31,11 +31,14 @@ And your CSS should look like this:
 ```CSS
 .images-grid {
 	text-align: justify;
+	font-size: 0;
+	line-height: 0;
 }
 .image-wrapper {
 	display: inline-block;
-	font-size: 0;
-	line-height: 0;
+}
+.image-thumb {
+	max-width: 100%;
 }
 ```
 
