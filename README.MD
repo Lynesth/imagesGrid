@@ -50,7 +50,7 @@ $(".images-grid").imagesGrid({
 	imageSelector: '.image-thumb',		// The class name of the images in your grid
 	maxLines: false,			// The maximum number of lines to show (false means all lines should be visible)
 	showLastLine: true,			// Should the last line be hidden
-	alignLastLine: 'left',			// How should the last line be aligned (only if it is visible)
+	alignLastLine: 'left',			// How should the last line be aligned (only if it is visible). Should be set to justify when using maxLines or if showLastLine is false
 	responsive: true			// To disable the grid responsivness (default is true)
 });
 ```
