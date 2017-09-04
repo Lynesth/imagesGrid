@@ -29,14 +29,6 @@ Your HTML code should look like this:
 And your CSS should look like this:
 
 ```CSS
-.images-grid {
-	text-align: justify;
-	font-size: 0;
-	line-height: 0;
-}
-.image-wrapper {
-	display: inline-block;
-}
 .image-thumb {
 	max-width: 100%;
 }
@@ -49,14 +41,17 @@ Then you simply have to call the plugin:
 $(".images-grid").imagesGrid();
 ```
 
-Some options are available:
+Some options are available (with their default values):
 
 ```JS
 $(".images-grid").imagesGrid({
-	rowHeight: 250,				// The minimum height you want each row of the grid to be
-	margin: 15,				// The amount of pixels between each images
+	rowHeight: 150,				// The minimum height you want each row of the grid to be
+	margin: 1,				// The amount of pixels between each images
 	imageSelector: '.image-thumb',		// The class name of the images in your grid
-	responsive: false			// To disable the grid responsivness (default is true)
+	maxLines: false,			// The maximum number of lines to show (false means all lines should be visible)
+	showLastLine: true,			// Should the last line be hidden
+	alignLastLine: 'left',			// How should the last line be aligned (only if it is visible)
+	responsive: true			// To disable the grid responsivness (default is true)
 });
 ```
 
