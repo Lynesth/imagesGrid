@@ -12,14 +12,6 @@
 		<meta name="description" content="" />
 		<style type="text/css">
 			/* imageGrid CSS */
-			.images-grid {
-				text-align: justify;
-				font-size: 0;
-				line-height: 0;
-			}
-			.image-wrapper {
-				display: inline-block;
-			}
 			.image-thumb {
 				max-width: 100%;
 			}
@@ -139,7 +131,7 @@
 			    </div>
 			</div>
 	
-			<h2>Grid with custom rowHeight and margin</h2>
+			<h2>Grid with custom rowHeight and margin, showing only 1 line</h2>
 			<div class="images-grid images-grid-2">
 			    <div class="image-wrapper" data-width="1024" data-height="768">
 			        <img class="image-thumb" src="https://placehold.it/1024x768/" />
@@ -173,7 +165,7 @@
 			    </div>
 			</div>
 	
-			<h2>Grid with custom classes and some absolute overlays</h2>
+			<h2>Grid with custom classes and some absolute overlays, centering the last line</h2>
 			<div class="products">
 			    <div class="product-wrapper" data-width="1024" data-height="768">
 			        <img class="product-image" src="https://placehold.it/1024x768/" />
@@ -245,13 +237,15 @@
 
 				$(".images-grid-2").imagesGrid({
 					rowHeight: 250,
-					margin: 10
+					margin: 10,
+					maxLines: 1
 				});
 
 				$(".products").imagesGrid({
 					rowHeight: 250,
 					margin: 15,
-					imageSelector: '.product-image'
+					imageSelector: '.product-image',
+					alignLastLine: 'center'
 				});
 			});
 		</script>
